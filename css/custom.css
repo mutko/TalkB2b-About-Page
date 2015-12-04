@@ -1,0 +1,669 @@
+/* TalkB2B About pages styles */
+@font-face {
+  font-family: 'ITCAvantGardeStd-Md';
+  src: url('../fonts/ITCAvantGardeStd-Md.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'ITCAvantGardeStd-Demi';
+  src: url('../fonts/ITCAvantGardeStd-Demi.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'ChaletBook-Bold';
+  src: url('../fonts/ChaletBook-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/ChaletBook-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ChaletBook-Bold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/ChaletBook-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ChaletBook-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+	background-color: rgb(208,208,208);
+}
+/* typography */
+h1, .h1, h2, .h2 {
+  	margin-top: 0px;
+  	margin-bottom: 0px;
+  	font-family: 'ITCAvantGardeStd-Md';
+} 
+h3, .day {
+	font-weight: bold;
+	margin-top: 0px;
+  	margin-bottom: 0px;
+	font-family: 'ITCAvantGardeStd-Demi';
+}
+p {
+	font-family: Arial;
+	margin-bottom: 0;
+}
+button, button a {
+	color: white;
+}
+button:hover {
+	opacity: .8;
+}
+button a:hover {
+	color: white;
+}
+a:focus, button a:hover {
+    text-decoration: none;
+}
+/* colors */
+.top-header {
+	background-color: rgb(54,54,54);
+}
+.nav-background, .nav>li>a:focus {
+	background-color: rgb(66,66,70);
+	color: white;
+}
+.conference-title .container,
+.about-conference .container,
+.schedule, .registration,
+.sponzors-and-organizators,
+.venue,
+.register,
+footer {
+	background-color: white;
+}
+
+/* header styles */
+.top-header {
+	line-height: 40px;
+}
+.top-header a {
+	font-family: 'ChaletBook-Bold';
+	font-size: 14px;
+}
+.login {
+	color: white;
+	font-weight: bold;
+	float: right;
+	padding-right: 40px;
+}
+.login:hover {
+	text-decoration: none;
+}
+
+/* navigation styles */
+.nav {
+	font-family: 'ChaletBook-Bold';
+	font-size: 16px;
+}
+.nav a {
+	color: white;
+}
+.nav>li>a:hover {
+	background-color: rgb(55,55,57);
+}
+.nav>li.active>a, .nav>li.active>a:hover, .nav>li.active>a:focus {
+	background-color: rgb(55,55,57);
+}
+
+/* section 1 */
+.conference-title {
+	text-align: center;
+}
+.conference-title h1 {
+	padding-top: 20px;
+}
+.conference-title h3 {
+	padding: 20px 0;
+}
+.participants button {
+	background-color: rgb(0,118,190);
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 6px 15px;
+	margin: 10px 0 30px 0;
+	}
+.participants button a {
+	font-family: 'ITCAvantGardeStd-Demi';
+	font-size: 13px;
+	}
+.participants button:hover {
+	background-color: rgb(0,134,190);
+	}
+
+/* section 2 styles */
+.news-from-organizators {
+	background: url(../images/grad.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.news {
+	background-color: rgba(255,255,255,.8);
+	padding: 20px 50px 0 70px;
+	line-height: 1.2;
+}
+.news h3 {
+	margin-bottom: 20px;
+}
+.news-date {
+	padding-bottom: 35px;
+	border-bottom: 1px solid rgb(204,204,204);
+}
+.date {
+	float: left;
+	width: 43px;
+	height: 50px;
+	background-color: rgb(77,77,77);
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+	padding-top: 7px;
+	margin-top: -2px;
+	margin-right: 10px;
+}
+.drugi {
+	margin-top: 25px;
+}
+.social {
+	height: 148px;
+	padding-top: 30px;
+}
+.share {
+	display: inline-block;
+	margin-right: 20px;
+}
+.share_size_large {
+	width: 60px;
+}
+.share__count {
+	background-color: #fff;
+	border: solid 1px #a5b1bd;
+	border-radius: 3px;
+	/* add in vendor rules */
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+	/* add in vendor rules */
+	color: #424a4d;
+	float: left;
+	font-weight: bold;
+	margin-right: 10px;
+	padding: 4px 10px;
+	position: relative;
+	text-align: center;
+}
+.share_size_large > .share__count {
+	display: block;
+	float: none;
+	font-size: 18px;
+	margin-right: 0;
+	margin-bottom: 12px;
+	padding: 10px 0;
+}
+.share__count:before, .share__count:after {
+	content: '';
+	display: block;
+	height: 0;
+	top: 50%;
+	position: absolute;
+	right: -14px;
+	width: 0;
+	margin-top: -6px;
+}
+.share_size_large > .share__count:before, .share_size_large > .share__count:after {
+	content: '';
+	display: block;
+	height: 0;
+	left: 50%;
+	position: absolute;
+	top: auto;
+	width: 0;
+}
+.share__count:before {
+	border: solid 7px transparent;
+	border-color: transparent transparent transparent #a5b1bd;
+}
+.share_size_large > .share__count:before {
+	border-color: #a5b1bd transparent transparent transparent;
+	bottom: -14px;
+	margin-left: -7px;
+}
+.share__count:after {
+	border: solid 6px transparent;
+	border-color: transparent transparent transparent #fff;
+	right: -12px;
+	margin-top: -5px;
+}
+.share_size_large > .share__count:after {
+	margin-left: -6px;
+	bottom: -12px;
+	border-color: #fff transparent transparent transparent;
+}
+.share__btn {
+	border: solid 1px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	/* add in vendor rules */
+	box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.3), 0 1px 3px rgba(0, 0, 0, 0.15);
+	/* add in vendor rules */
+	color: #fff;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 5px 10px;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+.share_size_large > .share__btn {
+	padding: 5px 0;
+	width: 100%;
+}
+.share_type_twitter > .share__btn {
+	background-color: #4099FF;
+}
+.share_type_facebook > .share__btn {
+	background-color: #3B5999;
+}
+.social a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+/* section 3 styles */
+.about {
+	padding: 37px 20px 30px 35px;
+}
+.about p {
+	font-family: Georgia;
+	font-size: 16px;
+}
+.about p:first-child {
+	margin-bottom: 30px;
+}
+aside {
+	width: 80%;
+	margin: 0 auto;
+}
+.tehnicom {
+	background-color: rgb(36,180,255);
+}
+.tehnicom p {
+	font-family: 'ITCAvantGardeStd-Md';
+	color: white;
+}
+.tehnicom p:first-child {
+	font-size: 24px;
+}
+.tehnicom img {
+	padding: 8px 5px;
+	border: 2px solid white;
+	border-radius: 100%;
+	margin: 10px;
+}
+.twitter-img {
+	width: 60px;
+	height: 60px;
+	background-color: rgb(6,161,241);
+	float: left;
+	margin-right: 10px;
+}
+.tehnicom a:hover {
+	text-decoration: none;
+}
+.twitter-feed {
+	margin-left: 10px;
+	padding-left: 15px;
+	padding-top: 15px;
+}
+.twitter-feed p {
+	font-size: 12px;
+}
+.prvi {
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgb(204,204,204);
+}
+.twitter-feed a {
+	color: #333;
+}
+
+/* section 4 styles */
+.speakers img {
+	border: 10px solid white;
+	margin-bottom: 20px;
+	-webkit-transition: all 0,1s ease;
+    -moz-transition: all 0,1s ease;
+    -o-transition: all 0,1s ease;
+    -ms-transition: all 0,1s ease;
+    transition: all 0,1s ease;
+}
+.speakers-title h2 {
+    overflow: hidden;
+    text-align: center;
+    margin: 27px 0 30px 0;
+}
+.speakers-title h2:before,
+.speakers-title h2:after {
+    background-color: rgb(172,172,172);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.speakers-title h2:before {
+	right: 1em;
+	margin-left: -50%;
+}
+.speakers-title h2:after {
+    left: 1em;
+    margin-right: -50%;
+}
+.speakers {
+	padding-bottom: 65px;
+	padding-left: 15px;
+}
+.speakers h3 {
+	font-size: 18px;
+	text-align: center;
+}
+.speakers img:hover {
+	-webkit-filter: drop-shadow(10px 7px 1px grey);
+	drop-shadow(10px 7px 1px grey);
+}
+ 	.thumbnail.with-caption {
+   	display: inline-block;
+   	background-color: inherit;
+   	border: none;
+}
+
+/* section 5 styles */
+.event-info {
+	text-align: center;
+}
+.event-info p {
+	font-family: Georgia;
+	font-size: 16px;
+}
+.event-info h3 {
+	font-size: 22px;
+	font-weight: bold;
+	margin: 25px 0 45px 0;
+}
+.schedule, 
+.venue,
+.registration {
+	padding-top: 45px;
+}
+.big-icon {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	background-color: rgb(225,225,225);
+	border-radius: 100%;
+}
+.event-info .glyphicon {
+	font-size: 36px;
+	color: rgb(0,114,188);
+	line-height: 100px;
+}
+.schedule {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+p.event-date {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'ITCAvantGardeStd-Demi';
+}
+.registration {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.registration p {
+	font-size: 14px;
+}
+.razmak {
+	padding-top: 10px;
+}
+
+/* section 6 styles */
+.sponzors-and-organizators {
+	padding: 70px 0 85px 0;
+}
+.sponzors-and-organizators h2 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.supported {
+	padding-bottom: 30px;
+}
+
+/* section 7 styles */
+.register {
+	padding-bottom: 60px;
+	text-align: center;
+}
+.register button {
+	background-color: rgb(0,120,192);
+	border: 1px solid #333;
+	border-radius: 5px;
+	padding: 15px 10px;
+}
+.register button a {
+	font-family: 'ITCAvantGardeStd-Demi';
+	font-size: 22px;
+}
+.number-circle {
+	font-family: 'ITCAvantGardeStd-Demi';
+	background-color: rgb(149,149,149);
+	color: white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+	border-radius: 50%;
+    width: 74px;
+    padding: 8px;
+    font-size: 38px;
+    font-weight: bold;
+	position: relative;
+	margin: 0 auto;
+}
+.number-circle .height_fix {
+    margin-top: 100%;
+}
+.number-circle .content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+	height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: -25px;
+}
+.days-until-events {
+	padding-bottom: 30px;
+}
+
+/* section 8 styles */
+.get-mobilized {
+	font-family: 'ITCAvantGardeStd-Demi';
+	font-size: 14px;
+	line-height: 70px;
+	text-align: center;
+}
+
+/* footer styles */
+footer {
+	font-family: Arial;
+	font-size: 14px;
+	padding-top: 25px;
+	padding-bottom: 100px;
+}
+footer a {
+	color: rgb(77,77,77);
+}
+footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+footer li {
+	display: inline;
+}
+
+
+/* media queries */
+
+/* tablets */
+@media (min-width: 768px) {
+
+	h1 {
+		font-size: 34px;
+		padding: 37px 0 0 35px;
+	}
+	h2 {
+		font-size: 30px;
+		font-style: italic;
+	}
+	h3, .day {
+		font-size: 18px;
+	}
+	.nav {
+		line-height: 50px;
+		font-size: 15px;
+	}
+	.nav li {
+		border-right: 1px solid rgb(55,55,57);
+	}
+	.nav li:last-of-type {
+		border-right: none;
+	}
+	.nav li.active {
+		border-top: 2px solid rgb(65,188,242);
+	}	
+	.nav li a {
+		padding: 0;
+	}	/* nav */
+	.conference-title {
+		text-align: left;
+	} 	/* section 1 */
+	.news {
+		padding: 20px 50px 0 70px;
+		line-height: 1.2;
+	}
+	.about {
+		padding: 37px 20px 60px 35px;
+		line-height: 1.3;
+	}
+	aside {
+		padding-top: 37px;
+	}
+	.speakers h3 {
+		font-size: 26px;
+	}
+	.event-info {
+		margin-bottom: 77px;
+	} 
+	.schedule, .registration, .venue {
+		height: 517px;
+	}
+	.venue {
+		background: url(../images/map.jpg) no-repeat;
+		background-size: 100% 100%;
+	}
+	.sponzors-and-organizators h2 {
+		text-align: left;
+	}
+	.organized {
+		padding-left: 20px;
+	}
+	.organized h2 {
+		padding-left: 30px;
+	}
+	.supported {
+		padding-bottom: 0;
+	}
+	.center {
+		padding-left: 60px;
+	}
+	.days-until-events,
+	.days-until-registration {
+		margin-top: 31px;
+		border-top: 1px solid rgb(172,172,172);
+		position: relative;
+		padding-bottom: 0;
+	}
+	.pozicija-1 {
+		position: absolute;
+		right: 30px;
+		top: -40px;
+	}
+	.pozicija-2 {
+		position: absolute;
+		left: 60px;
+		top: -40px;
+	}
+	.register {
+		padding-bottom: 120px;
+	}
+	.get-mobilized {
+		font-size: 22px;
+	}
+
+}/* end of tablets media query */
+	
+
+/* desktops */
+@media (min-width: 992px) {
+
+	.nav {
+		font-size: 18px;
+	} /* da stane nav bez prelamanja */
+
+	h1 {
+		margin-top: 30px;
+	} /* za naslov samo */
+	
+	.news-date {
+		padding-bottom: 25px;
+	} /* zbog linija, manji razmak */
+
+	.participants {
+		padding-left: 70px;
+	} /* desna kolona u ravni */
+	.razmak {
+		padding-top: 30px;
+	}
+	.supported {
+		border-right: 1px solid rgb(166,166,166);
+	}
+	.get-mobilized {
+		background: url(../images/robot.png) no-repeat;
+		background-position: 80% 10%;
+		padding-left: 100px;
+	}
+	.get-mobilized img {
+		margin-left: 130px;
+	}
+	.design {
+		padding-left: 25px;
+	}
+} /* end of desktops media query */
+
+
+/* large desktops */
+@media (min-width: 1200px) {
+
+	.nav li a {
+		padding: 10px 15px;
+	}
+	.nav>li.active>a, .nav>li.active>a:hover, .nav>li.active>a:focus {
+		padding-right: 35px;
+		padding-left: 35px;
+	}
+	.about {
+		padding-right: 60px;
+	}
+	.supported img {
+		padding-left: 10px;
+	}
+	.organized img {
+		padding-left: 20px;
+	}
+	.get-mobilized {
+		background-position: 74% 10%;
+	}
+}
